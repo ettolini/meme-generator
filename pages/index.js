@@ -7,7 +7,7 @@ export default function Home({ memes }) {
 
   return (
     <div>
-      <h1 className="mb-8">
+      <h1 className="mb-8 mx-auto text-center italic text-green-700 font-sans font-bold">
         Hello, <span className="line-through">World</span> Memes!
       </h1>
       <MemeList memes={allMemes} />

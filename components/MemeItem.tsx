@@ -1,13 +1,15 @@
 import Link from "next/link";
 
 const MemeItem = (props: any) => {
+    const memeUrl = (props.meme.url as string);
+
     return (
-        <Link href="/meme/[id]" as={`/meme/${props.meme.id}`}>
-            <a>
-                <h3>{props.meme.name}</h3>
-                <img src={props.meme.url}/>
-            </a>
-        </Link>
+        <div className="grid-cols-2">
+            <img className="inline pr-6 mb-2 text-xs w-24" src="https://freepngimg.com/thumb/internet_meme/3-2-troll-face-meme-png-thumb.png"/>
+            <Link href="/meme/[id]" as={`/meme/${memeUrl.replace("https:\/\/i.imgflip.com\/", "")}`}>
+                <p className="inline cursor-pointer font-sans italic text-xl">{props.meme.name}</p>
+            </Link>
+        </div>
     )
 }
 

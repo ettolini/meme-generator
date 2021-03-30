@@ -2,10 +2,10 @@ import { useRouter } from "next/router";
 
 const meme = () => {
   const router = useRouter();
-  const id = router.query.id;
-  console.log(id);
+  const url = router.query.url;
+  const imgUrl = "https://i.imgflip.com/" + url;
 
-  return <div>This is meme #{id}</div>;
+  return <img src={imgUrl} />;
 };
 
 export default meme;
