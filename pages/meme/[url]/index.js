@@ -5,7 +5,11 @@ const meme = () => {
   const url = router.query.url;
   const imgUrl = "https://i.imgflip.com/" + url;
 
-  return <img src={imgUrl} />;
+  return (
+    <div>
+      <img className="mx-auto border-gray-300 border-4" src={imgUrl} />
+    </div>
+  );
 };
 
 export default meme;
