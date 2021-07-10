@@ -4,7 +4,7 @@ const MemeItem = (props: any) => {
   const memeUrl = props.meme.url as string;
 
   return (
-    <div className="mb-4 hover:shadow-md grid grid-cols-2 w-5/12">
+    <div className="mx-auto mb-4 hover:shadow-md grid grid-cols-2 w-5/12">
       <div className="inline text-xs w-24">
         <img
           className=""
