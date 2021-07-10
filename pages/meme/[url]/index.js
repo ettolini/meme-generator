@@ -6,8 +6,8 @@ const meme = () => {
   const imgUrl = "https://i.imgflip.com/" + url;
 
   return (
-    <div>
-      <img className="mx-auto border-gray-300 border-4" src={imgUrl} />
+    <div className="mt-4 mx-auto border-gray-800 border-4 rounded-md">
+      <img className="max-h-96" src={imgUrl} />
     </div>
   );
 };
